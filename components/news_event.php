@@ -102,10 +102,11 @@ $getPostPublic = new WP_Query($argsPublic);
                 <?php } ?>
                 <div class="subscribe">
                     <h5>Đăng ký nhận tin tức mới</h5>
-                    <form action="">
-                        <input type="email" placeholder="Email của bạn">
-                        <button>Đăng ký</button>
-                    </form>
+<!--                    <form action="">-->
+<!--                        <input type="email" placeholder="Email của bạn">-->
+<!--                        <button>Đăng ký</button>-->
+<!--                    </form>-->
+                    <?php echo  do_shortcode('[contact-form-7 id="e7e5be0" title="Mail tin tức"]')?>
                 </div>
                 <div class="news-orther">
                     <?php

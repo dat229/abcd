@@ -8,7 +8,7 @@ $social_media = get_field('social_media','option');
         <div class="contact-wrapper row">
             <div class="contact-form col-lg-8 col-sm-12 wow fadeInLeft " data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;">
 
-                    <?php  echo do_shortcode('[contact-form-7 id="a8ca64f" title="Email liên hệ"]') ?>
+                    <?php  echo do_shortcode('[contact-form-7 id="6f70525" title="Email liên hệ"]') ?>
 
             </div>
             <div class="contact-method col-lg-4 col-sm-12 wow fadeInRight" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;">

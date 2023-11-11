@@ -287,19 +287,5 @@ require get_template_directory() . '/inc/customizer-shortcode.php';
  */
 require get_template_directory() . '/inc/customizer-ajax.php';
 
-add_action('wp_footer', 'cf7__redirect_thankyoupage');
-
 add_action( 'wp_footer', 'mycustom_wp_footer' );
 
-function mycustom_wp_footer() {
-    ?>
-    <script type="text/javascript">
-        document.addEventListener( 'wpcf7mailsent', function( event ) {
-            console('dat');
-            if ( 'a8ca64f' == event.detail.contactFormId ) {
-                window.location = 'http://localhost:8080/product_internship/lien-he/';
-            }
-        }, false );
-    </script>
-    <?php
-}

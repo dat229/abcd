@@ -3451,7 +3451,8 @@ body {
           .news .news-wrapper .news-left .subscribe h5 {
             font-size: 14px;
             line-height: 28px; } }
-      .news .news-wrapper .news-left .subscribe form {
+      .news .news-wrapper .news-left .subscribe div form {
+        position: relative;
         border-radius: 30px;
         overflow: hidden;
         background: #F0F1F2;
@@ -3459,12 +3460,12 @@ body {
         display: flex;
         justify-content: space-between; }
         @media only screen and (max-width: 1440px) {
-          .news .news-wrapper .news-left .subscribe form {
-            width: 60%; } }
-        @media only screen and (max-width: 480px) {
-          .news .news-wrapper .news-left .subscribe form {
+          .news .news-wrapper .news-left .subscribe div form {
             width: 100%; } }
-        .news .news-wrapper .news-left .subscribe form input {
+        @media only screen and (max-width: 480px) {
+          .news .news-wrapper .news-left .subscribe div form {
+            width: 100%; } }
+        .news .news-wrapper .news-left .subscribe div form > span > input {
           outline: none;
           background: none;
           border: none;
@@ -3473,22 +3474,26 @@ body {
           line-height: 17px;
           font-family: Inter-Regular, sans-serif;
           color: #9A9EA6; }
-          .news .news-wrapper .news-left .subscribe form input::placeholder {
+          .news .news-wrapper .news-left .subscribe form span input::placeholder {
             font-size: 14px;
             color: #9A9EA6;
             font-family: Inter-Regular, sans-serif; }
           @media only screen and (max-width: 480px) {
-            .news .news-wrapper .news-left .subscribe form input {
+            .news .news-wrapper .news-left .subscribe form > span > input {
               width: 65%;
               padding: 10px 20px; } }
-        .news .news-wrapper .news-left .subscribe form button {
+        .news .news-wrapper .news-left .subscribe form > input {
+          position: absolute;
+          right: 0;
+          top: 0;
+          bottom: 0;
           padding: 15px 50px;
           border: none;
           border-radius: 30px;
           color: #9A9EA6;
           background: #000000; }
           @media only screen and (max-width: 480px) {
-            .news .news-wrapper .news-left .subscribe form button {
+            .news .news-wrapper .news-left .subscribe form > input {
               padding: 10px 30px; } }
     .news .news-wrapper .news-left .news-orther {
       display: grid;

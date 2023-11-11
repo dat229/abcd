@@ -83,6 +83,8 @@
                 'next_text' => '>',
                 'type' => 'array'
             ));
+
+            if(!$so_luong_kol){
             ?>
             <div class="page-number">
                 <ul>
@@ -94,6 +96,7 @@
                 </ul>
             </div>
             <?php
+            }
         ?>
     </section>
 </div>

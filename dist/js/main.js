@@ -200,11 +200,6 @@ function openCity(evt, tabsName) {
         $(".menu").css('maxHeight', ($window.height() - $(".navigation").outerHeight()))
     });
 
-    document.addEventListener('wpcf7mailsent', function(event) {
-        location = 'http://localhost:8080/product_internship/';
-    }, false);
-
-
 })();
 
 $(document).ready(function(){
